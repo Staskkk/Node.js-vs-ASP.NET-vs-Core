@@ -13,7 +13,7 @@ namespace TestClient
 
         private static volatile int requestCount;
         private static volatile int taskNum;
-        private static volatile string href;
+        private static volatile string url;
 
         private static long globalSuccessCount;
         private static double globalSum;
@@ -39,7 +39,7 @@ namespace TestClient
         static void Main(string[] args)
         {
             Console.WriteLine("Input url:");
-            href = Console.ReadLine();
+            url = Console.ReadLine();
             Console.WriteLine("Input request count:");
             requestCount = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Input number of tasks:");
@@ -52,7 +52,7 @@ namespace TestClient
                 var httpClient = new HttpClient();
                 for (int i = 0; i < 10; i++)
                 {
-                    await httpClient.GetAsync(href);
+                    await httpClient.GetAsync(url);
                 }
 
                 initResetEvent.Set();
@@ -131,7 +131,7 @@ namespace TestClient
                 try
                 {
                     var requestCancelTokenSource = new CancellationTokenSource();
-                    Task requestTask = httpClient.GetAsync(href, requestCancelTokenSource.Token);
+                    Task requestTask = httpClient.GetAsync(url, requestCancelTokenSource.Token);
                     var timeForRequest = DateTime.Now;
                     if (await Task.WhenAny(requestTask, Task.Delay(waitDelay)) == requestTask)
                     {
