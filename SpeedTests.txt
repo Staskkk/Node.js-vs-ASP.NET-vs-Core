@@ -1,0 +1,182 @@
+http://192.168.1.6:5000/json
+
+http://192.168.1.6:3000/json
+
+JSON:
+
+10 на 10:
+
+Core:
+Tests count: 10
+Average requests query avg: 21,87 ms
+Average global avg: 1,792 ms
+Average global time: 218,7 ms
+
+Node.js:
+Tests count: 10
+Average requests query avg: 33,25 ms
+Average global avg: 3,013 ms
+Average global time: 332,5 ms
+
+Node.js with clusters:
+Tests count: 10
+Average requests query avg: 24,75 ms
+Average global avg: 2,079 ms
+Average global time: 247,5 ms
+
+
+JSON:
+
+100 на 10:
+
+Core:
+Tests count: 10
+Average requests query avg: 199,93 ms
+Average global avg: 1,5719 ms
+Average global time: 1999,3 ms
+
+Node.js:
+Tests count: 10
+Average requests query avg: 222,48 ms
+Average global avg: 1,8164 ms
+Average global time: 2224,8 ms
+
+Node.js with clusters:
+Tests count: 10
+Average requests query avg: 220,44 ms
+Average global avg: 1,7874 ms
+Average global time: 2204,4 ms
+
+
+JSON:
+
+100 на 100:
+
+Core:
+Tests count: 10
+Average requests query avg: 1124,528 ms
+Average global avg: 10,96303 ms
+Average global time: 112452,8 ms
+
+Node.js:
+Tests count: 10
+Average requests query avg: 1246,535 ms
+Average global avg: 12,22383 ms
+Average global time: 124653,5 ms
+
+Node.js with clusters:
+Tests count: 10
+Average requests query avg: 1171,66 ms
+Average global avg: 11,44364 ms
+Average global time: 117166 ms
+
+
+JSON:
+
+10 на 1000:
+
+Core:
+Tests count: 10
+Average success count: 10000; 100%
+Average failed count: 0; 0%
+Average min request time: 4,79939 ms
+Average max request time: 423,02661 ms
+Average global avg: 177,960586155002 ms
+Average global time: 1779605,86155002 ms
+
+Node.js:
+Tests count: 10
+Average success count: 10000; 100%
+Average failed count: 0; 0%
+Average min request time: 3,10045 ms
+Average max request time: 758,29364 ms
+Average global avg: 191,419727643 ms
+Average global time: 1914197,27643 ms
+
+Node.js with clusters:
+Tests count: 10
+Average success count: 10000; 100%
+Average failed count: 0; 0%
+Average min request time: 4,39904 ms
+Average max request time: 713,18393 ms
+Average global avg: 173,891799408 ms
+Average global time: 1738917,99408 ms
+
+
+JSON:
+
+10 на 5000:
+
+Core:
+Tests count: 10
+Average success count: 50000; 100%
+Average failed count: 0; 0%
+Average min request time: 3,59883 ms
+Average max request time: 6623,19604 ms
+Average global avg: 1745,3948870306 ms
+Average global time: 87269744,3515301 ms
+
+Node.js:
+Tests count: 10
+Average success count: 50000; 100%
+Average failed count: 0; 0%
+Average min request time: 2,6994 ms
+Average max request time: 5578,97234 ms
+Average global avg: 585,592677152396 ms
+Average global time: 29279633,8576198 ms
+
+Node.js with clusters:
+Tests count: 10
+Average success count: 50000; 100%
+Average failed count: 0; 0%
+Average min request time: 1,79979 ms
+Average max request time: 4412,56525 ms
+Average global avg: 754,023585750596 ms
+Average global time: 37701179,2875298 ms
+
+
+
+PING:
+
+100 на 100:
+
+Core:
+Tests count: 10
+Average requests query avg: 668,208 ms
+Average global avg: 6,48735 ms
+Average global time: 66820,8 ms
+
+Node.js:
+Tests count: 10
+Average requests query avg: 794,571 ms
+Average global avg: 7,75553 ms
+Average global time: 79457,1 ms
+
+Node.js with clusters:
+Tests count: 10
+Average requests query avg: 715,403 ms
+Average global avg: 6,97352 ms
+Average global time: 71540,3 ms
+
+
+PING:
+
+10 на 5000:
+
+Core:
+Tests count: 10
+Average global avg: 1801,35899973984 ms
+Average global time: 82975005,2164999 ms
+
+Node.js:
+Tests count: 10
+Average global avg: 687,002060746281 ms
+Average global time: 31091121,6815699 ms
+
+Node.js with clusters:
+Tests count: 10
+Average global avg: 629,598845759397 ms
+Average global time: 27872142,46631 ms
+
+
+
