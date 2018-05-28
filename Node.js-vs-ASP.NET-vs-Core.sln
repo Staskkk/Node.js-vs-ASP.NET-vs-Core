@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TestNode", "TestNode\TestNode.njsproj", "{DAF8FC31-44ED-4259-A561-AFAFCD1D14C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCore", "TestCore\TestCore.csproj", "{17A253AB-A431-4865-A6D4-2B170C3006EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{00EDBB67-98D5-4F06-A565-5E0254B119CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAF8FC31-44ED-4259-A561-AFAFCD1D14C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF8FC31-44ED-4259-A561-AFAFCD1D14C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF8FC31-44ED-4259-A561-AFAFCD1D14C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF8FC31-44ED-4259-A561-AFAFCD1D14C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A253AB-A431-4865-A6D4-2B170C3006EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A253AB-A431-4865-A6D4-2B170C3006EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A253AB-A431-4865-A6D4-2B170C3006EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A253AB-A431-4865-A6D4-2B170C3006EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00EDBB67-98D5-4F06-A565-5E0254B119CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00EDBB67-98D5-4F06-A565-5E0254B119CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00EDBB67-98D5-4F06-A565-5E0254B119CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00EDBB67-98D5-4F06-A565-5E0254B119CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EEC3850-2C27-4265-903C-17945E0D8300}
+	EndGlobalSection
+EndGlobal
