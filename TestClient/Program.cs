@@ -10,12 +10,14 @@ namespace TestClient
     class Program
     {
         private const int waitDelay = 30000;
+        private const int initRequestCount = 100;
 
         private static volatile int requestCount;
         private static volatile int taskNum;
         private static volatile string url;
 
         private static long globalSuccessCount;
+        private static double globalTime;
         private static double globalSum;
         private static double globalMax;
         private static double globalMin;
@@ -47,10 +49,13 @@ namespace TestClient
 
             long globalRequestsCount = requestCount * taskNum;
 
+            Console.WriteLine("Init...");
+            Console.WriteLine();
+
             Task.Run(async () =>
             {
                 var httpClient = new HttpClient();
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < initRequestCount; i++)
                 {
                     await httpClient.GetAsync(url);
                 }
@@ -76,7 +81,9 @@ namespace TestClient
 
                 Task.Run(async () =>
                 {
+                    var timeForRequests = DateTime.Now;
                     await Task.WhenAll(workingTasks);
+                    globalTime = (DateTime.Now - timeForRequests).TotalMilliseconds;
                     globalResetEvent.Set();
                 });
 
@@ -98,10 +105,10 @@ namespace TestClient
                 Console.WriteLine("Global min request time: " + globalMin + " ms");
                 Console.WriteLine("Global max request time: " + globalMax + " ms");
                 Console.WriteLine("Global avg: " + globalAvg + " ms");
-                Console.WriteLine("Global time: " + globalSum + " ms");
+                Console.WriteLine("Global time: " + globalTime + " ms");
 
                 allTestsGlobalAvg += globalAvg;
-                allTestsGlobalTime += globalSum;
+                allTestsGlobalTime += globalTime;
                 allTestsMin += globalMin;
                 allTestsMax += globalMax;
                 allTestsSuccessCount += globalSuccessCount;
